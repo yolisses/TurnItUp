@@ -1,0 +1,7 @@
+.imageWrapper {
+	border-radius: 6px;
+	background-color: rgb(119, 134, 153);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
