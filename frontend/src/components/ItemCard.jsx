@@ -20,7 +20,7 @@ export default function ItemCard() {
             <div className="imageWrapper" style={{ "backgroundImage": `url(${image})` }}></div>
         </a>
         <div className="description">
-            <div id="name">{name}</div>
+            <div>{name}</div>
             <div>{author}</div>
         </div>
     </div >

@@ -13,7 +13,9 @@
 	padding-top: 100%;
 }
 
-.description {
+.description * {
 	text-align: center;
+	white-space: nowrap;
 	overflow: hidden;
+	text-overflow: '..';
 }
