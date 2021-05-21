@@ -14,11 +14,13 @@ export default function ItemCard() {
             setAuthor(res.data.author)
         })
 
-    return <div>
+    return <div className="parentCard" style={{ width: size + 'rem' }}>
         <a href="/music">
-            <div className="imageWrapper" style={{ "background-image": `url(${testImage})`, width: size + 'rem', height: size + 'rem' }}></div>
+            <div className="imageWrapper" style={{ "background-image": `url(${testImage})` }}></div>
         </a>
-        <div id="name">{name}</div>
-        <div>{author}</div>
+        <div className="description">
+            <div id="name">{name}</div>
+            <div>{author}</div>
+        </div>
     </div >
 }
