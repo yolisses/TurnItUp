@@ -21,7 +21,7 @@ export default function ItemCard() {
         </a>
         <div className="description">
             <div>{name}</div>
-            <div>{author}</div>
+            <div className="faded">{author}</div>
         </div>
     </div >
 }

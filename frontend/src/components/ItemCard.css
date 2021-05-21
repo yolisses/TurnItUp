@@ -19,3 +19,7 @@
 	overflow: hidden;
 	text-overflow: '..';
 }
+
+.faded {
+	opacity: 50%;
+}
