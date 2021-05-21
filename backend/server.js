@@ -1,6 +1,8 @@
 import express from 'express';
+import cors from 'cors';
+
 const app = express();
-const port = 3000;
+const port = 5000;
 
 const exampleMusics = [
 	{
@@ -12,6 +14,8 @@ const exampleMusics = [
 		},
 	},
 ];
+
+app.use(cors());
 
 app.get('/music/0', (req, res) => {
 	res.send(exampleMusics[0]);
