@@ -1,22 +1,23 @@
 import './ItemCard.css'
-import axios from 'axios'
+import api from '../services/api';
 import { useState } from 'react'
 
 export default function ItemCard() {
     const size = 8
-    const testImage = 'https://images.unsplash.com/photo-1621360841013-c7683c659ec6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=pan-yunbo-EgL0EtzL0Wc-unsplash.jpg&w=640'
     const [name, setName] = useState("Fetching name")
     const [author, setAuthor] = useState("Fetching author")
+    const [image, setImage] = useState("")
 
-    axios.get('http://localhost:5000/music/0')
+    api.get('music/0')
         .then((res) => {
             setName(res.data.name)
             setAuthor(res.data.author)
+            setImage(res.data.image)
         })
 
     return <div className="parentCard" style={{ width: size + 'rem' }}>
         <a href="/music">
-            <div className="imageWrapper" style={{ "background-image": `url(${testImage})` }}></div>
+            <div className="imageWrapper" style={{ "backgroundImage": `url(${image})` }}></div>
         </a>
         <div className="description">
             <div id="name">{name}</div>
