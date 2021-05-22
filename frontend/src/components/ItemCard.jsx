@@ -3,7 +3,7 @@ import api from '../services/api';
 import { useState } from 'react'
 
 export default function ItemCard() {
-    const size = 8
+    const size = 10
     const [name, setName] = useState("Fetching name")
     const [author, setAuthor] = useState("Fetching author")
     const [image, setImage] = useState("")
