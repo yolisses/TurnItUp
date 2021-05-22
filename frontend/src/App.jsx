@@ -17,20 +17,6 @@ function App() {
 			<ItemCard></ItemCard>
 			<ItemCard></ItemCard>
 			<ItemCard></ItemCard>
-			<ItemCard></ItemCard>
-			<ItemCard></ItemCard>
-			<ItemCard></ItemCard>
-			<ItemCard></ItemCard>
-			<ItemCard></ItemCard>
-			<ItemCard></ItemCard>
-			<ItemCard></ItemCard>
-			<ItemCard></ItemCard>
-			<ItemCard></ItemCard>
-			<ItemCard></ItemCard>
-			<ItemCard></ItemCard>
-			<ItemCard></ItemCard>
-			<ItemCard></ItemCard>
-			<ItemCard></ItemCard>
 		</Carousel>
 	</div>;
 }

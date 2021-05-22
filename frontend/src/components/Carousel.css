@@ -18,3 +18,8 @@
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 }
+
+.vertical_margin {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
