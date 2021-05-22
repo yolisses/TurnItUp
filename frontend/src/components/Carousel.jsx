@@ -1,8 +1,19 @@
+import api from '../services/api'
+import { useState } from 'react'
+import ItemCard from './ItemCard'
+
 import './Carousel.css'
 
 function Carousel(params) {
+    const [itens, setItens] = useState([])
+
+    api.get(params.src)
+        .then((res) => {
+            setItens(res.data)
+        })
+
     return <div className="carousel vertical_margin">
-        {params.children}
+        {itens.map(item => <ItemCard id={item} key={item}></ItemCard>)}
     </div>
 }
 

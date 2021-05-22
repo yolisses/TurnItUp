@@ -1,14 +1,14 @@
 import './ItemCard.css'
-import api from '../services/api';
+import api from '../services/api'
 import { useState } from 'react'
 
-export default function ItemCard() {
+export default function ItemCard(params) {
     const size = 10
     const [name, setName] = useState("Fetching name")
     const [author, setAuthor] = useState("Fetching author")
     const [image, setImage] = useState("")
 
-    api.get('music/0')
+    api.get(`/music/${params.id}`)
         .then((res) => {
             setName(res.data.name)
             setAuthor(res.data.author)
