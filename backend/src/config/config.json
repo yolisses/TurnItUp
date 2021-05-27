@@ -4,7 +4,11 @@
     "password": "postgres",
     "database": "turnitup_development",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "define": {
+      "timeStamps": true,
+      "underscored": true
+    }
   },
   "test": {
     "username": "postgres",
