@@ -4,7 +4,7 @@ import cors from 'cors';
 import exampleMusics from './exampleMusics.js';
 
 const app = express();
-const port = 5000;
+const port = 2626;
 
 app.use(cors());
 
