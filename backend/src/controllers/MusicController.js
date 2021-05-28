@@ -7,9 +7,18 @@ export default {
 	},
 
 	async add(req, res) {
-		console.log(req);
 		const { name, duration } = req.body;
 		const musics = await Music.create({ name, duration });
 		return res.json(musics);
+	},
+
+	async remove(req, res) {
+		const { id } = req.params;
+		const musics = await Music.destroy({
+			where: {
+				id: id,
+			},
+		});
+		return res.json({});
 	},
 };
